@@ -17,11 +17,10 @@ namespace FoodShop.App
         private Frame navigationFrame;      // Фрейм навигации по страницам
         private List<object> pagesList;     // Список страниц, по которым перемещается пользователь
         private List<Button> buttonsList;   // Список кнопок для навигации (кнопок на боковом меню)
-        private bool[] openedCategories;  // Открытые категории
+        private bool[] openedCategories;    // Открытые категории
 
         public NavigationContoller(int CategoriesAmount,int SubCategoriesInCategoryAmount, List<object> PagesList, List<Button> ButtonsList, Frame NavigatingFrame)
-        {
-            int i = 0;
+        { 
             this.subcategoriesAmount = SubCategoriesInCategoryAmount;
             this.navigationFrame = NavigatingFrame;
             this.pagesList = PagesList;

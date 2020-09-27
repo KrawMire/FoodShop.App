@@ -26,17 +26,14 @@ namespace FoodShop.App.Pages
         public ServerConnectionPage()
         {
             InitializeComponent();
-
-            loadingImageSourse = Path.GetFullPath("graphics/loading.gif");
-            MessageBox.Show(loadingImageSourse);
         }
 
         async void CheckConnection(string ConnectionString)
         {
             try
             {
-                context = new FoodShopContext(ConnectionString);
                 LoadingAnimation.Visibility = Visibility.Visible;
+                context = new FoodShopContext(ConnectionString);
                 authButton.IsEnabled = false;
                 await context.Database.EnsureCreatedAsync();
                 NavigationService.Navigate(new UserAuthPage(context));
@@ -44,7 +41,7 @@ namespace FoodShop.App.Pages
             catch
             {
                 LoadingAnimation.Visibility = Visibility.Collapsed;
-                authButton.IsEnabled = false;
+                authButton.IsEnabled = true;
                 MessageBox.Show("Не удалось подключиться к базе данных");
             }
         }

@@ -69,7 +69,7 @@ namespace FoodShop.App.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FoodShop.App;component/pages/shopsaddpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FoodShop.App;V1.0.0.0;component/pages/shopsaddpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\ShopsAddPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

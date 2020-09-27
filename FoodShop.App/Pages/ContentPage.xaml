@@ -1,0 +1,63 @@
+﻿<Page x:Class="FoodShop.App.Pages.ContentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FoodShop.App.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ContentPage">
+
+    <Grid>
+        <!-- Разметка окна -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+        </Grid.RowDefinitions>
+
+        <!-- Элементы управления -->
+
+        <!-- Боковая панель -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Background="#02b5dd" Grid.Row="0">
+                <Viewbox>
+                    <Label Content="Food Shop" Style="{StaticResource MainLogo}"/>
+                </Viewbox>
+            </Border>
+            <Border Background="#2f3a4c" Grid.Row="1">
+                <StackPanel>
+
+                    <Button Style="{StaticResource MenuButton}" Content="+ Магазины" x:Name="shopsButton" Click="categoryButton_Click" Tag="0"/>
+                    <Button Style="{StaticResource MenuListButton}" Content="> Список магазинов" Click="pageOpenButton_Click" x:Name="shopsTableButton" Visibility="Collapsed" Tag="2"/>
+                    <Button Style="{StaticResource MenuListButton}" Content="> Добавить магазин" Click="pageOpenButton_Click" x:Name="shopsAddButton" Visibility="Collapsed" Tag="1"/>
+
+                    <Button Style="{StaticResource MenuButton}" Content="+ Сотрудники" x:Name="employeesButton" Click="categoryButton_Click" Tag="3"/>
+                    <Button Style="{StaticResource MenuListButton}" Content="> Список сотрудников" Click="pageOpenButton_Click" x:Name="employeesTableButton" Visibility="Collapsed" Tag="5"/>
+                    <Button Style="{StaticResource MenuListButton}" Content="> Добавить сотрудника" Click="pageOpenButton_Click" x:Name="employeesAddButton" Visibility="Collapsed" Tag="4"/>
+
+                    <Button Style="{StaticResource MenuButton}" Content="+ Наличие товара в магазине" x:Name="productsInShopsButton" Click="categoryButton_Click" Tag="6"/>
+                    <Button Style="{StaticResource MenuListButton}" Content="> Список товаров в магазине" Click="pageOpenButton_Click" x:Name="productsInShopsTableButton" Visibility="Collapsed" Tag="8"/>
+                    <Button Style="{StaticResource MenuListButton}" Content="> Добавить товар в магазин" Click="pageOpenButton_Click" x:Name="productsInShopsAddButton" Visibility="Collapsed" Tag="7"/>
+
+                </StackPanel>
+            </Border>
+            <Button Grid.Row="1" Style="{StaticResource MenuExitButton}"
+                    x:Name="exitButton" 
+                    Click="exitButton_Click">
+                <TextBlock Text="Выйти из приложения"/>
+            </Button>
+        </Grid>
+
+        <!-- Фрейм для отображения основного контента приложения -->
+        <Frame Grid.Column="1" Grid.ColumnSpan="2" x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Page>

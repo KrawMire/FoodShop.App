@@ -1,0 +1,194 @@
+﻿<Application x:Class="FoodShop.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FoodShop.App"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- Шрифт приложения -->
+            <Style TargetType="{x:Type Window}">
+                <Setter Property="FontFamily" Value="Roboto" />
+            </Style>
+
+
+            <!-- Стили кнопок бокового меню -->
+            <Style x:Key="MenuButton" TargetType="Button">
+                <Setter Property="Height"       Value="50px"/>
+                <Setter Property="Background"   Value="Transparent"/>
+                <Setter Property="Foreground"   Value="#797f8b"/>
+                <Setter Property="FontSize"     Value="21px"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="0">
+                                <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25 0 0 0"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver"     Value="True">
+                        <Setter Property="Background"   Value="#45546b"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+
+            <!-- Стиль выпадающих кнопок бокового меню -->
+            <Style x:Key="MenuListButton" TargetType="Button">
+                <Setter Property="Height"       Value="50px"/>
+                <Setter Property="Background"   Value="Transparent"/>
+                <Setter Property="Foreground"   Value="#797f8b"/>
+                <Setter Property="FontSize"     Value="21px"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="0">
+                                <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50 0 0 0"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver"     Value="True">
+                        <Setter Property="Background"   Value="#45546b"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+
+            <!-- Стиль логотипа -->
+            <Style x:Key="MainLogo" TargetType="Label">
+                <Setter Property="Foreground"           Value="#ffffff"/>
+                <Setter Property="VerticalAlignment"    Value="Center"/>
+                <Setter Property="HorizontalAlignment"  Value="Center"/>
+                <Setter Property="FontWeight"           Value="Bold"/>
+            </Style>
+
+
+            <!-- Стиль кнопки выхода из приложения -->
+            <Style x:Key="MenuExitButton" TargetType="Button">
+                <Setter Property="Height"       Value="50px"/>
+                <Setter Property="Background"   Value="Transparent"/>
+                <Setter Property="Foreground"   Value="#797f8b"/>
+                <Setter Property="FontSize"     Value="21px"/>
+                <Setter Property="VerticalAlignment" Value="Bottom"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="0">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver"  Value="True">
+                        <Setter Property="Background" Value="#45546b"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+
+            <!-- Стиль кнопки в основной части приложения -->
+            <Style x:Key="PageButton" TargetType="Button">
+                <Setter Property="Height"               Value="50px"/>
+                <Setter Property="Background"           Value="Transparent"/>
+                <Setter Property="Foreground"           Value="#797f8b"/>
+                <Setter Property="FontSize"             Value="21px"/>
+                <Setter Property="VerticalAlignment"    Value="Bottom"/>
+                <Setter Property="Height"               Value="50px"/>
+                <Setter Property="FontSize"             Value="21"/>
+                <Setter Property="FontWeight"           Value="Bold"/>
+                <Setter Property="Foreground"           Value="#ffffff"/>
+                <Setter Property="Background"           Value="#2f3a4c"/>
+                <Setter Property="Margin"               Value="50 0 50 50"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="0">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver"     Value="True">
+                        <Setter Property="Background"   Value="#45546b"/>
+                    </Trigger>
+                </Style.Triggers>
+                <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
+
+
+            <!-- Стиль полей ввода в основной части приложения -->
+            <Style x:Key="PageTextBox" TargetType="TextBox">
+                <Setter Property="FontSize"     Value="20"/>
+                <Setter Property="Foreground"   Value="#b4b5ba"/>
+                <Setter Property="Margin"       Value="50 0 50 0"/>
+                <Setter Property="Padding"      Value="10"/>
+                <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
+
+
+            <!-- Стиль поля для ввода пароля -->
+            <Style x:Key="PagePasswordBox" TargetType="PasswordBox">
+                <Setter Property="FontSize"     Value="20"/>
+                <Setter Property="Foreground"   Value="#b4b5ba"/>
+                <Setter Property="Margin"       Value="50 0 50 0"/>
+                <Setter Property="Padding"      Value="10"/>
+                <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
+
+
+            <!-- Стиль надписи над полями ввода в основной части приложения -->
+            <Style x:Key="PageLabel" TargetType="Label">
+                <Setter Property="Foreground"   Value="#8f98a7"/>
+                <Setter Property="FontSize"     Value="21"/>
+                <Setter Property="FontWeight"   Value="Bold"/>
+            </Style>
+
+
+            <!-- Стиль области с контролами на странице -->
+            <Style x:Key="ContentBorder" TargetType="Border">
+                <Setter Property="Background"   Value="#ffffff"/>
+                <Setter Property="CornerRadius" Value="20"/>
+            </Style>
+            
+            <!-- Стиль таблиц с данными -->
+            <Style x:Key="DataTable" TargetType="DataGrid">
+                <Setter Property="AutoGenerateColumns"              Value="False"/>
+                <Setter Property="Background"                       Value="#ffffff"/>
+                <Setter Property="HorizontalScrollBarVisibility"    Value="Auto"/>
+                <Setter Property="CanUserAddRows"                   Value="False"/>
+                <Style.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="FontSize"     Value="18"/>
+                        <Setter Property="FontWeight"   Value="Bold"/>
+                        <Setter Property="Foreground"   Value="#8f98a7"/>
+                    </Style>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="BorderBrush"      Value="#797f8b"/>
+                        <Setter Property="BorderThickness"  Value="1"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

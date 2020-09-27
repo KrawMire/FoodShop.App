@@ -1,0 +1,91 @@
+﻿<Page x:Class="FoodShop.App.Pages.ServerConnectionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FoodShop.App.Pages"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UserAuthPage">
+
+    <Grid Background="#edeff1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentBorder}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50px"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="50px"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1">
+                    <Label Style="{StaticResource PageLabel}" Content="Введите имя сервера (Например: desktop-avignuq):"/>
+                    <TextBox Style="{StaticResource PageTextBox}"
+                             Text="Введите имя сервера..." 
+                             x:Name="serverNameTextBox"
+                             GotFocus="serverNameTextBox_GotFocus"
+                             LostFocus="serverNameTextBox_LostFocus"/>
+                    <Label Style="{StaticResource PageLabel}" Content="Введите пользователя базы данных (sa):"/>
+                    <TextBox Style="{StaticResource PageTextBox}"
+                             Text="Введите имя пользователя базы..." 
+                             x:Name="dbLoginTextBox"
+                             GotFocus="dbLoginTextBox_GotFocus"
+                             LostFocus="dbLoginTextBox_LostFocus"/>
+                    <Label Style="{StaticResource PageLabel}" Content="Введите пароль пользователя базы данных (12345):"/>
+                    <PasswordBox Style="{StaticResource PagePasswordBox}" 
+                             x:Name="dbPasswordTextBox"/>
+                </StackPanel>
+                <Button Style="{StaticResource PageButton}"
+                        x:Name="authButton"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Content="Войти"
+                        Click="authButton_Click"/>
+            </Grid>
+        </Border>
+
+
+
+        <Grid Grid.Row="1" Grid.Column="1"
+              Background="#FFFFFF"
+              Width="400"
+              Height="300"
+              Visibility="Collapsed"
+              x:Name="LoadingAnimation">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="-90" RenderingBias="Quality" ShadowDepth="2"/>
+            </Grid.Effect>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="1"
+                   FontSize="30"
+                   Text="Загрузка..."
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontWeight="Bold"/>
+            <!-- ./../Graphics/7VE.gif -->
+            <Image  gif:ImageBehavior.AnimatedSource="{Binding loadingImageSource}"
+                    Grid.Column="1"
+                    Grid.Row="1"/>
+        </Grid>
+    </Grid>
+</Page>

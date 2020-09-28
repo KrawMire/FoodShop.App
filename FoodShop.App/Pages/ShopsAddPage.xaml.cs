@@ -30,14 +30,14 @@ namespace FoodShop.App.Pages
         {
             if (string.IsNullOrWhiteSpace(addressTextBox.Text))
             {
-                addressTextBox.Text = "Введите адрес магазина...";
+                addressTextBox.Text = "Введите количество товара...";
                 addressTextBox.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#b4b5ba"));
             }
         }
 
         private void addressTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (addressTextBox.Text == "Введите адрес магазина...")
+            if (addressTextBox.Text == "Введите количество товара...")
             {
                 addressTextBox.Text = "";
                 addressTextBox.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));

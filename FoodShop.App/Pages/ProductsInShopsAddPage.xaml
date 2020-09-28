@@ -29,44 +29,32 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="1">
                     
-                    <Label Style="{StaticResource PageLabel}" Content="Введите адрес магазина:"/>
-                    <TextBox Style="{StaticResource PageTextBox}"
-                             Text="Введите ..." 
-                             x:Name="addressTextBox"
-                             GotFocus="addressTextBox_GotFocus" 
-                             LostFocus="addressTextBox_LostFocus"/>
+                    <Label Style="{StaticResource PageLabel}" Content="Выберите товар:"/>
+                    <ComboBox Style="{StaticResource DropList}"
+                              x:Name="productComboBox"
+                              ItemsSource="{Binding products}"/>
 
-                    <Label Style="{StaticResource PageLabel}" Content="Введите адрес магазина:"/>
-                    <TextBox Style="{StaticResource PageTextBox}"
-                             Text="Введите адрес магазина..." 
-                             x:Name="addressTextBox"
-                             GotFocus="addressTextBox_GotFocus" 
-                             LostFocus="addressTextBox_LostFocus"/>
+                    <Label Style="{StaticResource PageLabel}" Content="Выберите магазин:"/>
+                    <ComboBox Style="{StaticResource DropList}"
+                              x:Name="shopComboBox"
+                              ItemsSource="{Binding shops}"/>
 
-                    <Label Style="{StaticResource PageLabel}" Content="Введите адрес магазина:"/>
+                    <Label Style="{StaticResource PageLabel}" Content="Введите количество товара:"/>
                     <TextBox Style="{StaticResource PageTextBox}"
-                             Text="Введите адрес магазина..." 
-                             x:Name="addressTextBox"
-                             GotFocus="addressTextBox_GotFocus" 
-                             LostFocus="addressTextBox_LostFocus"/>
+                             Text="Введите количество товара..." 
+                             x:Name="amountTextBox"
+                             GotFocus="amountTextBox_GotFocus" 
+                             LostFocus="amountTextBox_LostFocus"/>
 
-                    <Label Style="{StaticResource PageLabel}" Content="Введите адрес магазина:"/>
-                    <TextBox Style="{StaticResource PageTextBox}"
-                             Text="Введите адрес магазина..." 
-                             x:Name="addressTextBox"
-                             GotFocus="addressTextBox_GotFocus" 
-                             LostFocus="addressTextBox_LostFocus"/>
+                    <Label Style="{StaticResource PageLabel}" Content="Выберите единицы измерения:"/>
+                    <ComboBox Style="{StaticResource DropList}"
+                              x:Name="unitComboBox"
+                              ItemsSource="{Binding units}"/>
 
-                    <Label Style="{StaticResource PageLabel}" Content="Введите адрес магазина:"/>
-                    <TextBox Style="{StaticResource PageTextBox}"
-                             Text="Введите адрес магазина..." 
-                             x:Name="addressTextBox"
-                             GotFocus="addressTextBox_GotFocus" 
-                             LostFocus="addressTextBox_LostFocus"/>
                 </StackPanel>
                 <Button Style="{StaticResource PageButton}"
-                        x:Name="shopAddButton"
-                        Click="shopAddButton_Click"
+                        x:Name="AddButton"
+                        Click="AddButton_Click"
                         Grid.Column="1"
                         Grid.Row="1"
                         Content="Добавить магазин"/>

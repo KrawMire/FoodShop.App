@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TrcvCZVCaTE4tCtfcflcG24UoEXgf0LkrICKsz4WyLqUQPQA9JlwTIVuIr+6O14Py1ND5QyFEcl1BlBVB4rBvw==",
+  "dgSpecHash": "nE50/4gawKg1hOrNqQntpuzOfBmJAsRpGLjDmK1CHnMYUOcfA00vWM3BHzYsGdbRgrnCw/nDTsmC2OXvrxB1Xw==",
   "success": true,
-  "projectFilePath": "D:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj",
+  "projectFilePath": "A:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gavor\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Gavor\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

@@ -28,16 +28,16 @@
                     <ColumnDefinition Width="50px"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="1">
-                    <Label Style="{StaticResource PageLabel}" Content="Введите адрес магазина:"/>
+                    <Label Style="{StaticResource PageLabel}" Content="Введите фамилию работника:"/>
                     <TextBox Style="{StaticResource PageTextBox}"
-                             Text="Введите адрес магазина..." 
-                             x:Name="addressTextBox"
-                             GotFocus="addressTextBox_GotFocus" 
-                             LostFocus="addressTextBox_LostFocus"/>
+                             Text="Введите фамилию работника..." 
+                             x:Name="firstNameTextBox"
+                             GotFocus="firstNameTextBox_GotFocus"
+                             LostFocus="firstNameTextBox_LostFocus"/>
                 </StackPanel>
                 <Button Style="{StaticResource PageButton}"
-                        x:Name="shopAddButton"
-                        Click="shopAddButton_Click"
+                        x:Name="AddButton"
+                        Click="AddButton_Click"
                         Grid.Column="1"
                         Grid.Row="1"
                         Content="Добавить магазин"/>

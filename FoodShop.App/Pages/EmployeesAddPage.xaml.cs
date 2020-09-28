@@ -25,5 +25,20 @@ namespace FoodShop.App.Pages
             InitializeComponent();
             this.context = context;
         }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void firstNameTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void firstNameTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

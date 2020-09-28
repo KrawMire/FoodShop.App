@@ -21,7 +21,6 @@ namespace FoodShop.App.Pages
     public partial class ServerConnectionPage : Page
     {
         FoodShopContext context;
-        string loadingImageSourse;
 
         public ServerConnectionPage()
         {

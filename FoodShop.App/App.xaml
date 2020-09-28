@@ -139,6 +139,18 @@
                 </Style.Resources>
             </Style>
 
+            <!-- Стиль выпадающего списка на странице добавления данных -->
+            <Style x:Key="DropList" TargetType="ComboBox">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Foreground" Value="#b4b5ba"/>
+                <Setter Property="Margin" Value="50 0 50 0"/>
+                <Setter Property="Padding" Value="10"/>
+                <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
 
             <!-- Стиль поля для ввода пароля -->
             <Style x:Key="PagePasswordBox" TargetType="PasswordBox">
@@ -167,7 +179,7 @@
                 <Setter Property="Background"   Value="#ffffff"/>
                 <Setter Property="CornerRadius" Value="20"/>
             </Style>
-            
+
             <!-- Стиль таблиц с данными -->
             <Style x:Key="DataTable" TargetType="DataGrid">
                 <Setter Property="AutoGenerateColumns"              Value="False"/>
@@ -189,6 +201,7 @@
                     </Style>
                 </Style.Resources>
             </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -20,33 +20,43 @@ namespace FoodShop.App.Pages
     public partial class ProductsInShopsAddPage : Page
     {
         FoodShopContext context;
-        List<string> units;
-        List<string> products;
-        List<string> shops;
 
         public ProductsInShopsAddPage(FoodShopContext context)
         {
             InitializeComponent();
 
-            List<Unit> unitsList = context.Unit.ToList();
-            List<Product> productList = context.Product.ToList();
-            List<Shop> shopList = context.Shop.ToList();
+            this.context    = context;
+            List<string>    unitsNames      = new List<string>(),
+                            shopsNames      = new List<string>(),
+                            productsNames   = new List<string>();
 
-            this.context = context;
-            
-            foreach (var element in unitsList) { units.Add(element.Name); }
-            foreach (var element in productList) { products.Add(element.Name); }
-            foreach (var element in shopList) { shops.Add(element.Address); }
+            foreach(var element in context.Unit.ToList()) { unitsNames.Add(element.Name); }
+            foreach(var element in context.Product.ToList()) { productsNames.Add(element.Name); }
+            foreach(var element in context.Shop.ToList()) { shopsNames.Add(element.Address); }
+
+            unitComboBox.ItemsSource = unitsNames;
+            productComboBox.ItemsSource = productsNames;
+            shopComboBox.ItemsSource = shopsNames;
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-
+            
+                context.ProductInShop.Add(new ProductInShop()
+                {
+                    ProductId = context.Product.Where(p => p.Name == productComboBox.SelectedItem.ToString()).Select(p => p.Id).FirstOrDefault(),
+                    ShopId = context.Shop.Where(s => s.Address == shopComboBox.SelectedItem.ToString()).Select(s => s.Id).FirstOrDefault(),
+                    Amount = Int32.Parse(amountTextBox.Text),
+                    UnitId = context.Unit.Where(u => u.Name == unitComboBox.SelectedItem.ToString()).Select(u => u.Id).FirstOrDefault()
+                });
+                context.SaveChanges();
+                MessageBox.Show("Данные успешно добавлены!");
+            
         }
 
         private void amountTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (amountTextBox.Text == "Введите адрес магазина...")
+            if (amountTextBox.Text == "Введите количество товара...")
             {
                 amountTextBox.Text = "";
                 amountTextBox.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
@@ -57,7 +67,7 @@ namespace FoodShop.App.Pages
         {
             if (string.IsNullOrWhiteSpace(amountTextBox.Text))
             {
-                amountTextBox.Text = "Введите адрес магазина...";
+                amountTextBox.Text = "Введите количество товара...";
                 amountTextBox.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#b4b5ba"));
             }
         }

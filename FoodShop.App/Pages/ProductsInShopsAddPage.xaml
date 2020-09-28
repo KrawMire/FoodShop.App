@@ -31,13 +31,11 @@
                     
                     <Label Style="{StaticResource PageLabel}" Content="Выберите товар:"/>
                     <ComboBox Style="{StaticResource DropList}"
-                              x:Name="productComboBox"
-                              ItemsSource="{Binding products}"/>
+                              x:Name="productComboBox"/>
 
                     <Label Style="{StaticResource PageLabel}" Content="Выберите магазин:"/>
                     <ComboBox Style="{StaticResource DropList}"
-                              x:Name="shopComboBox"
-                              ItemsSource="{Binding shops}"/>
+                              x:Name="shopComboBox"/>
 
                     <Label Style="{StaticResource PageLabel}" Content="Введите количество товара:"/>
                     <TextBox Style="{StaticResource PageTextBox}"
@@ -48,8 +46,7 @@
 
                     <Label Style="{StaticResource PageLabel}" Content="Выберите единицы измерения:"/>
                     <ComboBox Style="{StaticResource DropList}"
-                              x:Name="unitComboBox"
-                              ItemsSource="{Binding units}"/>
+                              x:Name="unitComboBox"/>
 
                 </StackPanel>
                 <Button Style="{StaticResource PageButton}"

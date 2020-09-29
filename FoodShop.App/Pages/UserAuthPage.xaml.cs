@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows;
@@ -47,7 +48,12 @@ namespace FoodShop.App.Pages
 
         private void authButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ContentPage(this.context));
+            //context.Shop.Where(s => s.Address == shopComboBox.SelectedItem.ToString()).Select(s => s.Id).FirstOrDefault()
+            if (context.User.Where(u => u.Login == loginTextBox.Text && u.Password == passwordTextBox.Password).FirstOrDefault() != null)
+                NavigationService.Navigate(new ContentPage(this.context));
+
+            else
+                MessageBox.Show("Не удалось найти пользователя с такими логином и паролем!");
         }
     }
 }

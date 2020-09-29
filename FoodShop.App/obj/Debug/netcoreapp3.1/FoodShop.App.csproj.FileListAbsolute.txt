@@ -161,7 +161,6 @@ A:\Учёба\Прикладное программирование\Patterns\Sin
 A:\Учёба\Прикладное программирование\Patterns\Singleton\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\WpfAnimatedGif.dll
 A:\Учёба\Прикладное программирование\Patterns\Singleton\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\Graphics\loading.gif
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.exe
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\Graphics\loading.gif
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.deps.json
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.runtimeconfig.json
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.runtimeconfig.dev.json

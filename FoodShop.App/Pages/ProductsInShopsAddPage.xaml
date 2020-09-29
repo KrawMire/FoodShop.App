@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:FoodShop.App.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ProductsInShops">
+      Title="ProductsInShops"
+      Loaded="Page_Loaded">
 
     <Grid Background="#edeff1">
         <Grid.ColumnDefinitions>
@@ -54,7 +55,7 @@
                         Click="AddButton_Click"
                         Grid.Column="1"
                         Grid.Row="1"
-                        Content="Добавить магазин"/>
+                        Content="Добавить наличие товара в магазине"/>
             </Grid>
         </Border>
     </Grid>

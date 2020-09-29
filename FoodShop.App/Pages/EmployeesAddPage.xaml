@@ -28,19 +28,39 @@
                     <ColumnDefinition Width="50px"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="1">
+                    
                     <Label Style="{StaticResource PageLabel}" Content="Введите фамилию работника:"/>
                     <TextBox Style="{StaticResource PageTextBox}"
                              Text="Введите фамилию работника..." 
                              x:Name="firstNameTextBox"
                              GotFocus="firstNameTextBox_GotFocus"
                              LostFocus="firstNameTextBox_LostFocus"/>
+
+                    <Label Style="{StaticResource PageLabel}" Content="Введите имя работника:"/>
+                    <TextBox Style="{StaticResource PageTextBox}"
+                             Text="Введите имя работника..." 
+                             x:Name="middleNameTextBox"
+                             GotFocus="middleNameTextBox_GotFocus"
+                             LostFocus="middleNameTextBox_LostFocus"/>
+
+                    <Label Style="{StaticResource PageLabel}" Content="Введите отчество работника:"/>
+                    <TextBox Style="{StaticResource PageTextBox}"
+                             Text="Введите отчество работника..." 
+                             x:Name="lastNameTextBox"
+                             GotFocus="lastNameTextBox_GotFocus"
+                             LostFocus="lastNameTextBox_LostFocus"/>
+
+                    <Label Style="{StaticResource PageLabel}" Content="Введите дату рождения сотрудника:"/>
+                    <DatePicker x:Name="birthDatePicker"
+                                Style="{StaticResource DatePickerStyle}"/>
+
                 </StackPanel>
                 <Button Style="{StaticResource PageButton}"
                         x:Name="AddButton"
                         Click="AddButton_Click"
                         Grid.Column="1"
                         Grid.Row="1"
-                        Content="Добавить магазин"/>
+                        Content="Добавить сотрудника"/>
             </Grid>
         </Border>
     </Grid>

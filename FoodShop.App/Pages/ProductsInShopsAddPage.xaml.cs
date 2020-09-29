@@ -25,14 +25,18 @@ namespace FoodShop.App.Pages
         {
             InitializeComponent();
 
-            this.context    = context;
-            List<string>    unitsNames      = new List<string>(),
-                            shopsNames      = new List<string>(),
-                            productsNames   = new List<string>();
+            this.context = context;
+        }
 
-            foreach(var element in context.Unit.ToList()) { unitsNames.Add(element.Name); }
-            foreach(var element in context.Product.ToList()) { productsNames.Add(element.Name); }
-            foreach(var element in context.Shop.ToList()) { shopsNames.Add(element.Address); }
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<string> unitsNames = new List<string>(),
+                            shopsNames = new List<string>(),
+                            productsNames = new List<string>();
+
+            foreach (var element in context.Unit.ToList()) { unitsNames.Add(element.Name); }
+            foreach (var element in context.Product.ToList()) { productsNames.Add(element.Name); }
+            foreach (var element in context.Shop.ToList()) { shopsNames.Add(element.Address); }
 
             unitComboBox.ItemsSource = unitsNames;
             productComboBox.ItemsSource = productsNames;
@@ -41,7 +45,8 @@ namespace FoodShop.App.Pages
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
                 context.ProductInShop.Add(new ProductInShop()
                 {
                     ProductId = context.Product.Where(p => p.Name == productComboBox.SelectedItem.ToString()).Select(p => p.Id).FirstOrDefault(),
@@ -51,7 +56,11 @@ namespace FoodShop.App.Pages
                 });
                 context.SaveChanges();
                 MessageBox.Show("Данные успешно добавлены!");
-            
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось добавить данные в базу.\nПроверьте правильность ввода данных и повторите попытку.");
+            }
         }
 
         private void amountTextBox_GotFocus(object sender, RoutedEventArgs e)

@@ -30,14 +30,14 @@ namespace FoodShop.App.Pages
         {
             if (string.IsNullOrWhiteSpace(addressTextBox.Text))
             {
-                addressTextBox.Text = "Введите количество товара...";
+                addressTextBox.Text = "Введите адрес магазина...";
                 addressTextBox.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#b4b5ba"));
             }
         }
 
         private void addressTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (addressTextBox.Text == "Введите количество товара...")
+            if (addressTextBox.Text == "Введите адрес магазина...")
             {
                 addressTextBox.Text = "";
                 addressTextBox.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"));
@@ -46,7 +46,20 @@ namespace FoodShop.App.Pages
 
         private void shopAddButton_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                context.Shop.Add(new Shop()
+                {
+                    Address = addressTextBox.Text
+                });
 
+                context.SaveChanges();
+                MessageBox.Show("Данные успешно добавлены!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось добавить данные в базу.\nПроверьте правильность ввода данных и повторите попытку.");
+            }
         }
     }
 }

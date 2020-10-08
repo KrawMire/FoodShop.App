@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodShop.App.DBWorker;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -13,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace FoodShop.App.Pages
 {
-    /// <summary>
-    /// Interaction logic for ContentPage.xaml
-    /// </summary>
     public partial class ContentPage : Page
     {
         private NavigationContoller menuController;

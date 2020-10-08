@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj": {}
+    "D:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj": {}
   },
   "projects": {
-    "A:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj": {
+    "D:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj",
+        "projectUniqueName": "D:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj",
         "projectName": "FoodShop.App",
-        "projectPath": "A:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj",
+        "projectPath": "D:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\FoodShop.App.csproj",
         "packagesPath": "C:\\Users\\Gavor\\.nuget\\packages\\",
-        "outputPath": "A:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\obj\\",
+        "outputPath": "D:\\GIT_REPOS\\FoodShop.App\\FoodShop.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

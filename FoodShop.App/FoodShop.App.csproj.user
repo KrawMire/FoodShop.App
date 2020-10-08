@@ -10,22 +10,31 @@
     <Compile Update="Pages\ContentPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\EmployeesAddPage.xaml.cs">
+    <Compile Update="Pages\Employees\EmployeesAddPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\EmployeesTablePage.xaml.cs">
+    <Compile Update="Pages\Employees\EmployeesTablePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\ProductsInShopsAddPage.xaml.cs">
+    <Compile Update="Pages\Employees\EmployeesUpdatePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\ProductsInShopsTablePage.xaml.cs">
+    <Compile Update="Pages\ProductsInShops\ProductsInShopsAddPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\ShopsAddPage.xaml.cs">
+    <Compile Update="Pages\ProductsInShops\ProductsInShopsTablePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\ShopsTablePage.xaml.cs">
+    <Compile Update="Pages\ProductsInShops\ProductsInShopsUpdatePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Shops\ShopsAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Shops\ShopsTablePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Shops\ShopsUpdatePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\UserAuthPage.xaml.cs">
@@ -39,25 +48,34 @@
     <Page Update="Pages\ContentPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\EmployeesAddPage.xaml">
+    <Page Update="Pages\Employees\EmployeesAddPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\EmployeesTablePage.xaml">
+    <Page Update="Pages\Employees\EmployeesTablePage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\ProductsInShopsAddPage.xaml">
+    <Page Update="Pages\Employees\EmployeesUpdatePage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\ProductsInShopsTablePage.xaml">
+    <Page Update="Pages\ProductsInShops\ProductsInShopsAddPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\ShopsAddPage.xaml">
+    <Page Update="Pages\ProductsInShops\ProductsInShopsTablePage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\ShopsTablePage.xaml">
+    <Page Update="Pages\ProductsInShops\ProductsInShopsUpdatePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Shops\ShopsAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Shops\ShopsTablePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\ServerConnectionPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Shops\ShopsUpdatePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\UserAuthPage.xaml">

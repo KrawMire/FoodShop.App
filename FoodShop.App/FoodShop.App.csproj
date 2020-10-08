@@ -28,12 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Graphics\loading.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <Page Update="Pages\ServerConnectionPage.xaml">
       <SubType>Designer</SubType>
     </Page>

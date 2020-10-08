@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FoodShop.App
+namespace FoodShop.App.DBWorker
 {
     public partial class EmployeeMainInfo
     {
@@ -10,8 +10,5 @@ namespace FoodShop.App
         public string MiddleName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
-
-        public virtual EmployeeShopInfo EmployeeShopInfo { get; set; }
-        public virtual EmployeeWorkInfo EmployeeWorkInfo { get; set; }
     }
 }

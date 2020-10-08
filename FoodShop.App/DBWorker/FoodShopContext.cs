@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace FoodShop.App
+namespace FoodShop.App.DBWorker
 {
     public partial class FoodShopContext : DbContext
     {
@@ -19,8 +19,6 @@ namespace FoodShop.App
         }
 
         public virtual DbSet<EmployeeMainInfo> EmployeeMainInfo { get; set; }
-        public virtual DbSet<EmployeeShopInfo> EmployeeShopInfo { get; set; }
-        public virtual DbSet<EmployeeWorkInfo> EmployeeWorkInfo { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<ProductInShop> ProductInShop { get; set; }
         public virtual DbSet<Shop> Shop { get; set; }
@@ -54,49 +52,6 @@ namespace FoodShop.App
                 entity.Property(e => e.MiddleName)
                     .IsRequired()
                     .HasMaxLength(100);
-            });
-
-            modelBuilder.Entity<EmployeeShopInfo>(entity =>
-            {
-                entity.HasKey(e => e.EmployeeId)
-                    .HasName("PK__Employee__7AD04FF18B1B4DC6");
-
-                entity.Property(e => e.EmployeeId)
-                    .HasColumnName("EmployeeID")
-                    .ValueGeneratedNever();
-
-                entity.Property(e => e.ShopId).HasColumnName("ShopID");
-
-                entity.HasOne(d => d.Employee)
-                    .WithOne(p => p.EmployeeShopInfo)
-                    .HasForeignKey<EmployeeShopInfo>(d => d.EmployeeId)
-                    .HasConstraintName("FK_2");
-
-                entity.HasOne(d => d.Shop)
-                    .WithMany(p => p.EmployeeShopInfo)
-                    .HasForeignKey(d => d.ShopId)
-                    .HasConstraintName("FK_1");
-            });
-
-            modelBuilder.Entity<EmployeeWorkInfo>(entity =>
-            {
-                entity.HasKey(e => e.EmployeeId)
-                    .HasName("PK__Employee__7AD04FF1E58BE30B");
-
-                entity.Property(e => e.EmployeeId)
-                    .HasColumnName("EmployeeID")
-                    .ValueGeneratedNever();
-
-                entity.Property(e => e.Position).IsRequired();
-
-                entity.Property(e => e.WorkDateFrom).HasColumnType("date");
-
-                entity.Property(e => e.WorkDateTo).HasColumnType("date");
-
-                entity.HasOne(d => d.Employee)
-                    .WithOne(p => p.EmployeeWorkInfo)
-                    .HasForeignKey<EmployeeWorkInfo>(d => d.EmployeeId)
-                    .HasConstraintName("FK_6");
             });
 
             modelBuilder.Entity<Product>(entity =>

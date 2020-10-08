@@ -30,10 +30,10 @@ namespace FoodShop.App
 
         private void NavigationWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            string messageString =  "Авторизация сейчас не работает, просто нажмите кнопку \"Войти\". \n" +
+            /*string messageString =  "Авторизация сейчас не работает, просто нажмите кнопку \"Войти\". \n" +
                                     "Также пока не работают вкладки меню с добавлением данных в базу (страницы не готовы),\n" +
                                     "работают только вкладки со списками, то есть выгрузка и отображение";
-            MessageBox.Show(messageString);
+            MessageBox.Show(messageString);*/
         }
     }
 }

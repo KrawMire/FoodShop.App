@@ -161,7 +161,6 @@ A:\Учёба\Прикладное программирование\Patterns\Sin
 A:\Учёба\Прикладное программирование\Patterns\Singleton\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\WpfAnimatedGif.dll
 A:\Учёба\Прикладное программирование\Patterns\Singleton\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\Graphics\loading.gif
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.exe
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\Graphics\loading.gif
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.deps.json
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.runtimeconfig.json
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\FoodShop.App.runtimeconfig.dev.json
@@ -213,13 +212,7 @@ D:\GIT_REPOS\FoodShop.App\FoodShop.App\bin\Debug\netcoreapp3.1\runtimes\win\lib\
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App.csprojAssemblyReference.cache
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ContentPage.g.cs
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\EmployeesAddPage.g.cs
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\EmployeesTablePage.g.cs
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShopsAddPage.g.cs
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShopsTablePage.g.cs
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ServerConnectionPage.g.cs
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ShopsAddPage.g.cs
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ShopsTablePage.g.cs
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\UserAuthPage.g.cs
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\App.g.cs
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App_MarkupCompile.cache
@@ -227,13 +220,7 @@ D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App_Mark
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\App.baml
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\MainWindow.baml
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ContentPage.baml
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\EmployeesAddPage.baml
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\EmployeesTablePage.baml
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShopsAddPage.baml
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShopsTablePage.baml
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ServerConnectionPage.baml
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ShopsAddPage.baml
-D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ShopsTablePage.baml
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\UserAuthPage.baml
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App.g.resources
 D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App.AssemblyInfoInputs.cache
@@ -326,3 +313,21 @@ A:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App.Asse
 A:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App.csproj.CoreCompileInputs.cache
 A:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App.csproj.CopyComplete
 A:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\FoodShop.App.genruntimeconfig.cache
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Employees\EmployeesAddPage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Employees\EmployeesTablePage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShops\ProductsInShopsAddPage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShops\ProductsInShopsTablePage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Shops\ShopsAddPage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Shops\ShopsTablePage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Employees\EmployeesAddPage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Employees\EmployeesTablePage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShops\ProductsInShopsAddPage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShops\ProductsInShopsTablePage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Shops\ShopsAddPage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Shops\ShopsTablePage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Employees\EmployeesUpdatePage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShops\ProductsInShopsUpdatePage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Shops\ShopsUpdatePage.g.cs
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Employees\EmployeesUpdatePage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\ProductsInShops\ProductsInShopsUpdatePage.baml
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\Pages\Shops\ShopsUpdatePage.baml

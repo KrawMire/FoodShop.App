@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Gavor\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Gavor\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_FoodShop.App.-227554424.00" t="ExcludeRecursive" />
+    <e p="D:\GIT_REPOS\FoodShop.App" t="IncludeFlat">
+      <e p="FoodShop.App" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DBWorker" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="EmployeeMainInfo.cs" t="Include" />
+          <e p="EmployeeShopInfo.cs" t="Include" />
+          <e p="EmployeeWorkInfo.cs" t="Include" />
+          <e p="FoodShopContext.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="ProductInShop.cs" t="Include" />
+          <e p="Shop.cs" t="Include" />
+          <e p="Unit.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+          <e p="UserInfo.cs" t="Include" />
+        </e>
+        <e p="EnvironmentControllers" t="Include">
+          <e p="NavigationContoller.cs" t="Include" />
+        </e>
+        <e p="FoodShop.App.csproj" t="IncludeRecursive" />
+        <e p="MainWindow.xaml" t="Include" />
+        <e p="MainWindow.xaml.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="App.g.cs" t="Include" />
+              <e p="FoodShop.App.AssemblyInfo.cs" t="Include" />
+              <e p="MainWindow.g.cs" t="Include" />
+              <e p="Pages" t="Include">
+                <e p="ContentPage.g.cs" t="Include" />
+                <e p="EmployeesAddPage.g.cs" t="Include" />
+                <e p="EmployeesTablePage.g.cs" t="Include" />
+                <e p="ProductsInShopsAddPage.g.cs" t="Include" />
+                <e p="ProductsInShopsTablePage.g.cs" t="Include" />
+                <e p="ServerConnectionPage.g.cs" t="Include" />
+                <e p="ShopsAddPage.g.cs" t="Include" />
+                <e p="ShopsTablePage.g.cs" t="Include" />
+                <e p="UserAuthPage.g.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="ContentPage.xaml" t="Include" />
+          <e p="ContentPage.xaml.cs" t="Include" />
+          <e p="EmployeesAddPage.xaml" t="Include" />
+          <e p="EmployeesAddPage.xaml.cs" t="Include" />
+          <e p="EmployeesTablePage.xaml" t="Include" />
+          <e p="EmployeesTablePage.xaml.cs" t="Include" />
+          <e p="ProductsInShopsAddPage.xaml" t="Include" />
+          <e p="ProductsInShopsAddPage.xaml.cs" t="Include" />
+          <e p="ProductsInShopsTablePage.xaml" t="Include" />
+          <e p="ProductsInShopsTablePage.xaml.cs" t="Include" />
+          <e p="ServerConnectionPage.xaml" t="Include" />
+          <e p="ServerConnectionPage.xaml.cs" t="Include" />
+          <e p="ShopsAddPage.xaml" t="Include" />
+          <e p="ShopsAddPage.xaml.cs" t="Include" />
+          <e p="ShopsTablePage.xaml" t="Include" />
+          <e p="ShopsTablePage.xaml.cs" t="Include" />
+          <e p="UserAuthPage.xaml" t="Include" />
+          <e p="UserAuthPage.xaml.cs" t="Include" />
+        </e>
+      </e>
+      <e p="FoodShop.App.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

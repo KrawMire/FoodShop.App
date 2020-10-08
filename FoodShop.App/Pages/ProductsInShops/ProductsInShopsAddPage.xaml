@@ -1,0 +1,62 @@
+﻿<Page x:Class="FoodShop.App.Pages.ProductsInShopsAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FoodShop.App.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProductsInShops"
+      Loaded="Page_Loaded">
+
+    <Grid Background="#edeff1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentBorder}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50px"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="50px"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1">
+                    
+                    <Label Style="{StaticResource PageLabel}" Content="Выберите товар:"/>
+                    <ComboBox Style="{StaticResource DropList}"
+                              x:Name="productComboBox"/>
+
+                    <Label Style="{StaticResource PageLabel}" Content="Выберите магазин:"/>
+                    <ComboBox Style="{StaticResource DropList}"
+                              x:Name="shopComboBox"/>
+
+                    <Label Style="{StaticResource PageLabel}" Content="Введите количество товара:"/>
+                    <TextBox Style="{StaticResource PageTextBox}"
+                             Text="Введите количество товара..." 
+                             x:Name="amountTextBox"
+                             GotFocus="amountTextBox_GotFocus" 
+                             LostFocus="amountTextBox_LostFocus"/>
+
+                    <Label Style="{StaticResource PageLabel}" Content="Выберите единицы измерения:"/>
+                    <ComboBox Style="{StaticResource DropList}"
+                              x:Name="unitComboBox"/>
+
+                </StackPanel>
+                <Button Style="{StaticResource PageButton}"
+                        x:Name="AddButton"
+                        Click="AddButton_Click"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Content="Добавить наличие товара в магазине"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

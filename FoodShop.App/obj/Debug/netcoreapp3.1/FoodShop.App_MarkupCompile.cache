@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-A:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\obj\Debug\netcoreapp3.1\
 FoodShop.App
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-A:\GIT_REPOS\FoodShop.App\FoodShop.App\App.xaml
-101251477254
+D:\GIT_REPOS\FoodShop.App\FoodShop.App\App.xaml
+13-1546335985
 
-23-1499518947
+24-32216377
 221287506947
-MainWindow.xaml;Pages\ContentPage.xaml;Pages\EmployeesAddPage.xaml;Pages\EmployeesTablePage.xaml;Pages\ProductsInShopsAddPage.xaml;Pages\ProductsInShopsTablePage.xaml;Pages\ServerConnectionPage.xaml;Pages\ShopsAddPage.xaml;Pages\ShopsTablePage.xaml;Pages\UserAuthPage.xaml;
+MainWindow.xaml;Pages\ContentPage.xaml;Pages\Employees\EmployeesAddPage.xaml;Pages\Employees\EmployeesTablePage.xaml;Pages\Employees\EmployeesUpdatePage.xaml;Pages\ProductsInShops\ProductsInShopsAddPage.xaml;Pages\ProductsInShops\ProductsInShopsTablePage.xaml;Pages\ProductsInShops\ProductsInShopsUpdatePage.xaml;Pages\ServerConnectionPage.xaml;Pages\Shops\ShopsAddPage.xaml;Pages\Shops\ShopsTablePage.xaml;Pages\Shops\ShopsUpdatePage.xaml;Pages\UserAuthPage.xaml;
 
 False
 

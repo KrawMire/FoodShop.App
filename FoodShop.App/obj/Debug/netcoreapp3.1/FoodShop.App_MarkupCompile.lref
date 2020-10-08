@@ -1,13 +1,16 @@
 ﻿
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\App.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\MainWindow.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ContentPage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\EmployeesAddPage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\EmployeesTablePage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ProductsInShopsAddPage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ProductsInShopsTablePage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ServerConnectionPage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ShopsAddPage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ShopsTablePage.xaml;;
-FA:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\UserAuthPage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\App.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\MainWindow.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ContentPage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\Employees\EmployeesAddPage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\Employees\EmployeesTablePage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ProductsInShops\ProductsInShopsAddPage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ProductsInShops\ProductsInShopsTablePage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ServerConnectionPage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\Shops\ShopsAddPage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\Shops\ShopsTablePage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\UserAuthPage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\Employees\EmployeesUpdatePage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\ProductsInShops\ProductsInShopsUpdatePage.xaml;;
+FD:\GIT_REPOS\FoodShop.App\FoodShop.App\Pages\Shops\ShopsUpdatePage.xaml;;
 

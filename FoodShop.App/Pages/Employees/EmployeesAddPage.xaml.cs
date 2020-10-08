@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodShop.App.DBWorker;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -42,7 +43,7 @@ namespace FoodShop.App.Pages
 
                 MessageBox.Show("Данные успешно добавлены!");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Не удалось добавить данные в базу.\nПроверьте правильность ввода данных и повторите попытку.");
             }

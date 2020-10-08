@@ -31,13 +31,13 @@
 
                 <DataGrid x:Name="mainTable" Grid.Column="1" Style="{StaticResource DataTable}">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Width="*" Foreground="#797f8b" FontSize="18" Binding="{Binding Product}">
+                        <DataGridTextColumn Width="*" Foreground="#797f8b" FontSize="18" Binding="{Binding ProductId}">
                             <DataGridTextColumn.Header>
                                 <TextBlock Text="Товар"/>
                             </DataGridTextColumn.Header>
                         </DataGridTextColumn>
 
-                        <DataGridTextColumn Width="*" Foreground="#797f8b" FontSize="18" Binding="{Binding ShopAddress}">
+                        <DataGridTextColumn Width="*" Foreground="#797f8b" FontSize="18" Binding="{Binding ShopId}">
                             <DataGridTextColumn.Header>
                                 <TextBlock Text="Адрес магазина"/>
                             </DataGridTextColumn.Header>
@@ -49,11 +49,22 @@
                             </DataGridTextColumn.Header>
                         </DataGridTextColumn>
 
-                        <DataGridTextColumn Width="*" Foreground="#797f8b" FontSize="18" Binding="{Binding Units}">
+                        <DataGridTextColumn Width="*" Foreground="#797f8b" FontSize="18" Binding="{Binding UnitId}">
                             <DataGridTextColumn.Header>
                                 <TextBlock Text="Единицы измерения"/>
                             </DataGridTextColumn.Header>
                         </DataGridTextColumn>
+
+                        <DataGridTemplateColumn Width="*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Button Content="Удалить" x:Name="deleteButton" Click="deleteButton_Click"/>
+                                        <Button Content="Редактировать" x:Name="editButton" Click="editButton_Click"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>

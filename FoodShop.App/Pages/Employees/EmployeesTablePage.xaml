@@ -21,6 +21,11 @@
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
 
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <Label Content="Поиск по фамилии:" FontSize="18"/>
+            <TextBox FontSize="18" x:Name="searchTextBox" TextChanged="searchTextBox_TextChanged"/>
+        </StackPanel>
+
         <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentBorder}">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -31,7 +36,7 @@
 
                 <DataGrid Grid.Column="1" Style="{StaticResource DataTable}" x:Name="mainTable">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Binding="{Binding ID}" Width="*" FontSize="18" Foreground="#797f8b">
+                        <DataGridTextColumn Binding="{Binding Id}" Width="*" FontSize="18" Foreground="#797f8b" x:Name="EmployeeID">
                             <DataGridTextColumn.Header>
                                 <TextBlock Text="ID сотрудника"/>
                             </DataGridTextColumn.Header>
@@ -61,23 +66,16 @@
                             </DataGridTextColumn.Header>
                         </DataGridTextColumn>
 
-                        <DataGridTextColumn Binding="{Binding Position}" Width="*" FontSize="18" Foreground="#797f8b">
-                            <DataGridTextColumn.Header>
-                                <TextBlock Text="Должность"/>
-                            </DataGridTextColumn.Header>
-                        </DataGridTextColumn>
-
-                        <DataGridTextColumn Binding="{Binding DateFrom}" Width="*" FontSize="18" Foreground="#797f8b">
-                            <DataGridTextColumn.Header>
-                                <TextBlock Text="Нанят на должность"/>
-                            </DataGridTextColumn.Header>
-                        </DataGridTextColumn>
-
-                        <DataGridTextColumn Binding="{Binding DateTo}" Width="*" FontSize="18" Foreground="#797f8b">
-                            <DataGridTextColumn.Header>
-                                <TextBlock Text="Уволен"/>
-                            </DataGridTextColumn.Header>
-                        </DataGridTextColumn>
+                        <DataGridTemplateColumn Width="*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Button Content="Удалить" x:Name="deleteButton" Click="deleteButton_Click"/>
+                                        <Button Content="Редактировать" x:Name="editButton" Click="editButton_Click"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>

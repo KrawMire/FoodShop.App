@@ -21,6 +21,11 @@
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
 
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <Label Content="Поиск по адресу:" FontSize="18"/>
+            <TextBox FontSize="18" x:Name="searchTextBox" TextChanged="searchTextBox_TextChanged"/>
+        </StackPanel>
+        
         <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentBorder}">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -41,6 +46,16 @@
                                 <TextBlock Text="Адрес магазина"/>
                             </DataGridTextColumn.Header>
                         </DataGridTextColumn>
+                        <DataGridTemplateColumn Width="*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Button Content="Удалить" x:Name="deleteButton" Click="deleteButton_Click"/>
+                                        <Button Content="Редактировать" x:Name="editButton" Click="editButton_Click"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>

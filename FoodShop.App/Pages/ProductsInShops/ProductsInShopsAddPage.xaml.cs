@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FoodShop.App.DBWorker;
 
 namespace FoodShop.App.Pages
 {
@@ -57,7 +58,7 @@ namespace FoodShop.App.Pages
                 context.SaveChanges();
                 MessageBox.Show("Данные успешно добавлены!");
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Не удалось добавить данные в базу.\nПроверьте правильность ввода данных и повторите попытку.");
             }

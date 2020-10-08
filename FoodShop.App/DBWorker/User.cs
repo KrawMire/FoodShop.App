@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FoodShop.App
+namespace FoodShop.App.DBWorker
 {
     public partial class User
     {
